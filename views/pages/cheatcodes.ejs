@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<%- include("../essentials") -%>
+		<title>uCodes - Cheat Codes (<%= game_info['name'] %>)</title>
+		<style><%- include('../css/style.css') -%></style>
+	</head>
+	<body id="body">
+		<%- include('../header')-%>
+		<div id="container">
+			<div id="content">
+				<table>
+					<thead>
+						<caption style="font-size: 20px; text-align: left;">
+							Title: <i><%= game_info['name'] %></i><br />
+							Version: <i><%= game_info['version'] %></i><br />
+							Region: <i><%= game_info['region'] %></i><br />
+							<!--Title ID: <i><%= game_info['titleid'] %></i><br />-->
+							<!--Total Codes: <i><%= game_info['totalcodes'] %></i>-->
+							Total Codes: <i><%= total_count %></i>
+						</caption>
+						<tr>
+							<th>Title</th>
+							<th>Description</th>
+							<th>Show Code</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% for(var i=0; i < data.length; i++) { %>
+							<% if(data[i].display == true) {%>
+							<tr>
+								<td><%= data[i].title %></td>
+								<td><%= data[i].description %></td>
+								<td><button class="show-button" id="<%= i %>" onclick="showPopUp(<%= i %>)" data-cafe-enabled="<%= data[i].cafe_code.enabled %>" data-cafe-code="<%= data[i].cafe_code.code %>" data-ugecko-enabled="<%= data[i].ugecko.enabled %>" data-ugecko-code="<%= data[i].ugecko.code %>" data-other="<%= data[i].other %>" data-name="<%= data[i].title %>">Show</button></td>
+							</tr>
+							<% } %>
+						<% } %>
+					</tbody>
+				</table>
+			</div>
+			<div id="modal">
+				<div id="modal-container">
+					<div id="modal-header">
+						<span id="modal-close">&times;</span>
+						<p id="modal-title"></p>
+					</div>
+					<div id="modal-content">
+						<div id="modal-cafe-code">
+							<p>
+								<a href="https://github.com/BullyWiiPlaza/JGeckoU" target="_BLANK" class="link">
+									Cafe Code
+								</a>
+							</p>
+							<textarea id="textarea-cafe-code"></textarea><br />
+							<button class="copy-button" id="copy-cafe-code" onclick="copyCode(0)">Copy</button>
+						</div>
+						<div id="modal-ugecko">
+							<p>
+								<a href="https://github.com/vincent-coding/uGecko" target="_BLANK" class="link">
+									uGecko
+								</a>
+							</p>
+							<textarea id="textarea-ugecko"></textarea><br />
+							<button class="copy-button" id="copy-ugecko" onclick="copyCode(1)">Copy</button>
+						</div>
+						<div id="modal-other">
+							<p>Other information</p>
+							<textarea readonly id="textarea-other-info"></textarea><br />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<%- include('../footer')-%>
+		<script type="text/javascript">
+			let modal = document.getElementById("modal"),
+				close = document.getElementById("modal-close"),
+				body  = document.getElementById("body");
+
+			close.onclick = function() {
+				modal.style.display = "none";
+				body.style.overflow = "auto";
+			};
+
+			function showPopUp(id) {
+				if(id < <%= game_info['totalcodes'] %> && id >= 0) {
+					let el = document.getElementById(id);
+					if(typeof(el) != undefined && el != null) {
+						document.getElementById("modal-title").innerHTML = "Cheat Code - " + el.dataset.name;
+						if(el.dataset.cafeEnabled.toLowerCase() == "true") {
+							document.getElementById("textarea-cafe-code").value = el.dataset.cafeCode;
+							document.getElementById("textarea-cafe-code").disabled = false;
+							document.getElementById("copy-cafe-code").disabled = false;
+						} else {
+							document.getElementById("textarea-cafe-code").value = "";
+							document.getElementById("textarea-cafe-code").disabled = true;
+							document.getElementById("copy-cafe-code").disabled = true;
+						}
+						if(el.dataset.ugeckoEnabled == "true") {
+							document.getElementById("textarea-ugecko").value = el.dataset.ugeckoCode;
+							document.getElementById("textarea-ugecko").disabled = false;
+							document.getElementById("copy-ugecko").disabled = false;
+						} else {
+							document.getElementById("textarea-ugecko").value = ""
+							document.getElementById("textarea-ugecko").disabled = true;
+							document.getElementById("copy-ugecko").disabled = true;
+						}
+						document.getElementById("textarea-other-info").value = el.dataset.other;
+						modal.style.display = "block";
+						body.style.overflow = "hidden";
+					}
+				}
+			}
+
+			function copyCode(i) {
+				if(i == 0) {
+					document.getElementById("textarea-cafe-code").select();
+				} else {
+					document.getElementById("textarea-ugecko").select();
+				}
+				document.execCommand("copy");
+			}
+		</script>
+	</body>
+</html>

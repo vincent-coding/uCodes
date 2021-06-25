@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<%- include("../essentials") -%>
+		<title>uCodes - Cheat Codes</title>
+		<style><%- include('../css/style.css') -%></style>
+	</head>
+	<body>
+		<%- include('../header')-%>
+		<div id="container">
+			<div id="content">
+				<table>
+					<caption>Select the game (<%= data.length %> games in total)</caption>
+					<thead>
+						<tr>
+							<th>Game</th>
+							<th>Version</th>
+							<th>Region</th>
+							<!--<th>Title ID</th>-->
+							<th>Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% for(var i=0; i < data.length; i++) { %>
+						<tr>
+							<td>
+								<a href="/cheats?id=<%= i %>" data-turbolinks="false">
+									<%= data[i].name %>
+								</a>
+							</td>
+							<td><%= data[i].version %></td>
+							<td><%= data[i].region %></td>
+							<!--<td><%= data[i].titleid %></td>-->
+							<td><%= data[i].totalcodes %></td>
+						</tr>
+						<% } %>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<%- include('../footer') -%>
+	</body>
+</html>

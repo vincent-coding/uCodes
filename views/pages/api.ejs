@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<%- include("../essentials") -%>
+		<title>uCodes - Homepage</title>
+		<style><%- include('../css/style.css') -%></style>
+		<link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/github-dark.css" />
+		<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/highlight.min.js"></script>
+		<script>hljs.highlightAll();</script>
+	</head>
+	<body>
+		<%- include('../header')-%>
+		<div id="container">
+			<div id="content">
+				<div id="api-title">
+					API Documentation
+				</div>
+				<hr class="separator" />
+				<div class="section">
+					<div class="header-section">
+						<div class="title-section">
+							<p>
+								<span class="type-get">GET</span> /games
+							</p>
+						</div>
+						<div class="desc-section">
+							<p>
+								Allows you to retrieve the list of games available on the site.
+							</p>
+						</div>
+					</div>
+					<div class="info-section">
+						<table>
+							<caption>Responses <span class="info-type">application/json</span></caption>
+							<thead>
+								<tr>
+									<th>Status Code</th>
+									<th>Examples</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<p><span class="info-round-green"></span>200</p>
+									</td>
+									<td>
+<pre class="json-style"><code class="language-json">[
+  {
+     "id": 0,
+     "name": "Mario Kart 8"
+  },
+  {
+     "id": 1,
+     "name": "WiiU Menu"
+  }
+]</code></pre>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="example-section">
+						<div class="curl-example">
+							<p class="title-example">Curl</p>
+							<pre class="pre"><code class="language-bash code">curl https://ucodes.herokuapp.com/api/games</code></pre>
+						</div>
+						<div class="python-example">
+							<p class="title-example">Python</p>
+							<pre class="pre"><code class="language-py code">import requests
+
+r = requests.get("https://ucodes.herokuapp.com/api/games")
+
+if r.status_code == 200:
+    print(r.json())
+else:
+    print("Error")</code></pre>
+						</div>
+						<div class="nodejs-example">
+							<p class="title-example">Node.JS</p>
+							<pre class="pre"><code class="language-js code"></code></pre>
+						</div>
+					</div>
+				</div>
+				<hr class="separator" />
+				<div class="section">
+					<div class="header-section">
+						<div class="title-section">
+							<p>
+								<span class="type-get">GET</span> /info
+							</p>
+						</div>
+						<div class="desc-section">
+							<p>
+								Allows you to retrieve information about a game.
+							</p>
+						</div>
+					</div>
+					<div class="info-section">
+						<table>
+							<caption>Responses <span class="info-type">application/json</span></caption>
+							<thead>
+								<tr>
+									<th>Status Code</th>
+									<th>Examples</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<span class="info-round-green"></span>200
+									</td>
+									<td>
+<pre class="json-style"><code class="language-json">{
+  "id": 1,
+  "name": "WiiU Menu",
+  "version": "5.5.X",
+  "region": "EUR",
+  "titleid": "00050010-10040200",
+  "totalcodes": 2
+}</code></pre>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="example-section">
+						<div class="curl-example">
+							<p class="title-example">Curl</p>
+							<pre class="pre"><code class="language-bash code">curl https://ucodes.herokuapp.com/api/info?id=</code></pre>
+						</div>
+						<div class="python-example">
+							<p class="title-example">Python</p>
+							<pre class="pre"><code class="language-py code">import requests
+
+r = requests.get("https://ucodes.herokuapp.com/api/info?id=")
+
+if r.status_code == 200:
+    print(r.json())
+else:
+    print("Error")</code></pre>
+						</div>
+						<div class="nodejs-example">
+							<p class="title-example">Node.JS</p>
+							<pre class="pre"><code class="language-js code"></code></pre>
+						</div>
+					</div>
+				</div>
+				<hr class="separator" />
+				<div class="section">
+					<div class="header-section">
+						<div class="title-section">
+							<p>
+								<span class="type-get">GET</span> /cheats
+							</p>
+						</div>
+						<div class="desc-section">
+							<p>
+								Allows you to retrieve all cheat codes for a specific game.
+							</p>
+						</div>
+					</div>
+					<div class="info-section">
+						<table>
+							<caption>Responses <span class="info-type">application/json</span></caption>
+							<thead>
+								<tr>
+									<th>Status Code</th>
+									<th>Examples</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<span class="info-round-green"></span>200
+									</td>
+									<td>
+<pre class="json-style"><code class="language-json">[
+  {
+     "id": 0,
+     "title": "500cc",
+     "description": "Allows you to set the speed of karts at 500CC",
+     "cafe_code": "020200A0 30699564\n4151999A 00000004\n00000000 00000000", 
+     "ugecko": "",
+     "other": "Only works on 200cc or online 150cc."
+  },
+  {
+     "id": 1,
+     "title": "Always In Star Effect",
+     "description": "Gives you the star effect all the time",
+     "cafe_code": "30000000 3FBA92BC\n35000000 50000000\n31000000 00000020\n30100000 00000000\n35000000 50000000\n31000000 00000160\n00120000 00000010\nD0000000 DEADCAFE", 
+     "ugecko": "",
+     "other": ""
+  },
+  {
+     "id": 2,
+     "title": "Always boost on race start",
+     "description": "Allows you to always start the game with a boosted start",
+     "cafe_code": "30000000 3FBA92BC\n10000000 50000000\n31000000 00000020\n30100000 00000000\n10000000 50000000\n31000000 00000075\n03120000 00000000\n00000000 00000000\n30000000 3FBA92BC\n35000000 50000000\n31000000 00000020\n30100000 00000000\n35000000 50000000\n31000000 0000015C\n00120000 3F7D2F1B\nD0000000 DEADCAFE",
+     "ugecko": "",
+     "other": "Boosts at the maximum distance at the start. Only works if you do not hold accelerate until after you have boosted otherwise you will blow out."
+  },
+  {
+     "id": 3,
+     "title": "Always in anti-gravity",
+     "description": "Allows permanent activation of anti-gravity mode",
+     "cafe_code": "30000000 4443BB4C\n35000000 50000000\n05120000 00000075\n00000000 00000000\n30000000 3FBA92BC\n35000000 50000000\n31000000 00000020\n30100000 00000000\n35000000 50000000\n31000000 00000154\n00120000 3F800000\nD0000000 DEADCAFE",
+     "ugecko": "",
+     "other": ""
+  }
+]</code></pre>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="example-section">
+						<div class="curl-example">
+							<p class="title-example">Curl</p>
+							<pre class="pre"><code class="language-bash code">curl https://ucodes.herokuapp.com/api/cheats?id=</code></pre>
+						</div>
+						<div class="python-example">
+							<p class="title-example">Python</p>
+							<pre class="pre"><code class="language-py code">import requests
+
+r = requests.get("https://ucodes.herokuapp.com/api/cheats?id=")
+
+if r.status_code == 200:
+    print(r.json())
+else:
+    print("Error")</code></pre>
+						</div>
+						<div class="nodejs-example">
+							<p class="title-example">Node.JS</p>
+							<pre class="pre"><code class="language-js code"></code></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<%- include('../footer') -%>
+	</body>
+</html>

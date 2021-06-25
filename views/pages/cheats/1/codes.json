@@ -1,0 +1,32 @@
+[
+	{
+		"id": 0,
+		"title": "Dark Theme",
+		"description": "5.5.4 - 5.5.5",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 105DD2A8\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x105DD2A8, 0xLLLLLLLL)"
+		},
+		"other": "Replaces LLLLLLLL with one of the desired values:\n\n40000000 -> White\n3F800000 -> Default\n3E800000 -> Light Grey\n3D800000 -> Grey (Often used as a dark theme)\n3C800000 -> Dark Grey\n3B800000 -> Very Dark Grey\n00000000 -> Black",
+		"display": true
+	},
+	{
+		"id": 1,
+		"title": "Dark Theme",
+		"description": "Before 5.5.4",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 105DD0A8\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x105DD0A8, 0xLLLLLLLL)"
+		},
+		"other": "Replaces LLLLLLLL with one of the desired values:\n\n40000000 -> White\n3F800000 -> Default\n3E800000 -> Light Grey\n3D800000 -> Grey (Often used as a dark theme)\n3C800000 -> Dark Grey\n3B800000 -> Very Dark Grey\n00000000 -> Black",
+		"display": true
+	}
+]

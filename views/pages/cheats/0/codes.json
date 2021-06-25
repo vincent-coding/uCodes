@@ -1,0 +1,77 @@
+[
+	{
+		"id": 0,
+		"title": "500cc",
+		"description": "Allows you to set the speed of karts at 500CC",
+		"cafe_code": {
+			"enabled": true,
+			"code": "020200A0 30699564\n4151999A 00000004\n00000000 00000000"
+		},
+		"ugecko": {
+			"enabled": false,
+			"code": ""
+		},
+		"other": "Only works on 200cc or online 150cc.",
+		"display": true
+	},
+	{
+		"id": 1,
+		"title": "Always In Star Effect",
+		"description": "Gives you the star effect all the time ",
+		"cafe_code": {
+			"enabled": true,
+			"code": "30000000 3FBA92BC\n35000000 50000000\n31000000 00000020\n30100000 00000000\n35000000 50000000\n31000000 00000160\n00120000 00000010\nD0000000 DEADCAFE"
+		},
+		"ugecko": {
+			"enabled": false,
+			"code": ""
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 2,
+		"title": "Always boost on race start",
+		"description": "Allows you to always start the game with a boosted start",
+		"cafe_code": {
+			"enabled": true,
+			"code": "30000000 3FBA92BC\n10000000 50000000\n31000000 00000020\n30100000 00000000\n10000000 50000000\n31000000 00000075\n03120000 00000000\n00000000 00000000\n30000000 3FBA92BC\n35000000 50000000\n31000000 00000020\n30100000 00000000\n35000000 50000000\n31000000 0000015C\n00120000 3F7D2F1B\nD0000000 DEADCAFE"
+		},
+		"ugecko": {
+			"enabled": false,
+			"code": ""
+		},
+		"other": "Boosts at the maximum distance at the start. Only works if you do not hold accelerate until after you have boosted otherwise you will blow out.",
+		"display": true
+	},
+	{
+		"id": 3,
+		"title": "Always in anti-gravity",
+		"description": "Allows permanent activation of anti-gravity mode",
+		"cafe_code": {
+			"enabled": true,
+			"code": "30000000 4443BB4C\n35000000 50000000\n05120000 00000075\n00000000 00000000\n30000000 3FBA92BC\n35000000 50000000\n31000000 00000020\n30100000 00000000\n35000000 50000000\n31000000 00000154\n00120000 3F800000\nD0000000 DEADCAFE"
+		},
+		"ugecko": {
+			"enabled": false,
+			"code": ""
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 4,
+		"title": "Amiibo Suit Replacement",
+		"description": "",
+		"cafe_code": {
+			"enabled": true,
+			"code": "Mario Suit\n00020000 105B49A0\nXXXXXXXX 00000000\n \nLuigi Suit\n00020000 105B49A4\nXXXXXXXX 00000000\n \nYoshi Suit\n00020000 105B49A8\nXXXXXXXX 00000000\n\nPeach Suit\n00020000 105B49AC\nXXXXXXXX 00000000\n\nToad Suit\n00020000 105B49B0\nXXXXXXXX 00000000\n \nDonkey Kong Suit\n00020000 105B49B4\nXXXXXXXX 00000000\n\nBowser Suit\n00020000 105B49B8\nXXXXXXXX 00000000\n\nWario Suit\n00020000 105B49BC\nXXXXXXXX 00000000\nCaptain Falcon Suit\n00020000 105B49C0\nXXXXXXXX 00000000\n \nFox McCloud Suit\n00020000 105B49C4\nXXXXXXXX 00000000\nSamus Aran Suit\n00020000 105B49C8\nXXXXXXXX 00000000\n \nLink Suit\n00020000 105B49CC\nXXXXXXXX 00000000\n \nKirby Suit\n00020000 105B49D4\nXXXXXXXX 00000000\n \nRosalina Suit\n00020000 105B49D8\nXXXXXXXX 00000000\n \nPikmin Suit\n00020000 105B49DC\nXXXXXXXX 00000000\n\nAnimal Crossing Suit\n00020000 105B49E0\nXXXXXXXX 00000000\n\nPAC-MAN Suit\n00020000 105B49E4\nXXXXXXXX 00000000\n \nMega Man Suit\n00020000 105B49E8\nXXXXXXXX 00000000\n \nSonic Suit\n00020000 105B49EC\nXXXXXXXX 00000000"
+		},
+		"ugecko": {
+			"enabled": false,
+			"code": ""
+		},
+		"other": "This code will allow you to replace any amiibo suit that is enabled, at least you will need a suit enabled to replace it with any of the suits available in the game, to apply this code you will need to do the following:\n \n1 - Enter the game of Mario Kart 8.\n2 - In the selection menu of the game press the + button, this is to enter the menu Mii Racing Suits.\n3 - In the menu of Mii Racing Suits apply the code.\n4 - When you select your mii and the suit you have modified, it will be replaced by the suit you have chosen.\n\nReplace X's with your desired suit:\n\n105B49F0 = Amiibo Mii Racing Suit Mario\n105B49F4 = Amiibo Mii Racing Suit Luigi\n105B49F8 = Amiibo Mii Racing Suit Yoshi\n105B49FC = Amiibo Mii Racing Suit Peach\n105B4A00 = Amiibo Mii Racing Suit Toad\n105B4A04 = Amiibo Mii Racing Suit Donkey Kong\n105B4A08 = Amiibo Mii Racing Suit Bowser\n105B4A0C = Amiibo Mii Racing Suit Wario\n105B4A10 = Amiibo Mii Racing Suit Captain Falcon\n105B4A14 = Amiibo Mii Racing Suit Fox McCloud\n105B4A18 = Amiibo Mii Racing Suit Samus Aran\n105B4A1C = Amiibo Mii Racing Suit Link\n105B4A24 = Amiibo Mii Racing Suit Kirby\n105B4A28 = Amiibo Mii Racing Suit Rosalina\n105B4A2C = Amiibo Mii Racing Suit Pikmin\n105B4A30 = Amiibo Mii Racing Suit Animal Crossing\n105B4A34 = Amiibo Mii Racing Suit PAC-MAN\n105B4A38 = Amiibo Mii Racing Suit Mega Man\n105B4A3C = Amiibo Mii Racing Suit Sonic",
+		"display": false
+	}
+]
