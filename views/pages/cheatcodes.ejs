@@ -2,8 +2,7 @@
 <html>
 	<head>
 		<%- include("../essentials") -%>
-		<title>uCodes - Cheat Codes (<%= game_info['name'] %>)</title>
-		<style><%- include('../css/style.css') -%></style>
+		<title>uCodes - Cheat Codes [<%= game_info['name'] %>]</title>
 	</head>
 	<body id="body">
 		<%- include('../header')-%>
@@ -15,6 +14,9 @@
 							Title: <i><%= game_info['name'] %></i><br />
 							Version: <i><%= game_info['version'] %></i><br />
 							Region: <i><%= game_info['region'] %></i><br />
+							<% if(game_info['name'] == "WiiU Menu") {%>
+							Title ID: <i><%= game_info['titleid'] %><br />
+							<% } %>
 							<!--Title ID: <i><%= game_info['titleid'] %></i><br />-->
 							<!--Total Codes: <i><%= game_info['totalcodes'] %></i>-->
 							Total Codes: <i><%= total_count %></i>
