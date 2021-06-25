@@ -2,7 +2,7 @@ const express = require('express'),
 	  path    = require('path'),
 	  fs      = require('fs'),
 	  app 	  = express(),
-	  port	  = 3000;
+	  port	  = 80;
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
