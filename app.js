@@ -1,3 +1,5 @@
+let compression = require('compression');
+
 const express = require('express'),
 	  path    = require('path'),
 	  fs      = require('fs'),
@@ -6,7 +8,9 @@ const express = require('express'),
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.use(express.static("public"))
+app.use(compression());
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/", (req, res) => {
 	res.render(`pages/homepage`);
@@ -20,13 +24,49 @@ app.get("/cheats", (req, res) => {
 				if(id < count.length) {
 					let game_info = JSON.parse(fs.readFileSync(`./views/pages/cheats/${id}/info.json`));
 					let data = JSON.parse(fs.readFileSync(`./views/pages/cheats/${id}/codes.json`));
+					
 					let total_count = 0;
 					for(i in data) {
 						if(data[i].display == true) {
 							total_count += 1;
 						}
 					}
-					return res.render(`pages/cheatcodes`, {data: data, game_info: game_info, total_count: total_count});
+
+					let showcode = null;
+
+					if("showcode" in req.query) {
+						let data_showcode = req.query.showcode;
+						if(data_showcode != "") {
+							if(!isNaN(data_showcode)) {
+								try {
+									if(data[data_showcode].display == true) {
+										showcode = data_showcode;
+									}
+								} catch {
+									showcode = null;
+								}
+							}
+						}
+					}
+
+					if("search" in req.query) {
+						let search = req.query.search;
+						if(search != "") {
+							let newData = [];
+							found = 0;
+							for(i in data) {
+								if(data[i].title.toLowerCase().includes(search.toLowerCase())) {
+									if(data[i].display == true) {
+										newData.push(data[i]);
+										found += 1;
+									}
+								}
+							}
+							return res.render(`pages/cheatcodes`, {data: newData, game_info: game_info, total_count: total_count, search: search,found: found, showcode: showcode});
+						}
+					}
+
+					return res.render(`pages/cheatcodes`, {data: data, game_info: game_info, total_count: total_count, search: null,found: null, showcode: showcode});
 				}
 			}
 		}
@@ -78,6 +118,20 @@ app.get(["/api/cheat", "/api/cheats"], (req, res) => {
 			}
 		}
 		res.json({"Status": "Error", "info": "Please check that you have entered a valid identifier!"});
+	});
+});
+
+app.get(["/api/cheatinfo", "/api/cheatsinfo"], (req, res) => {
+	let gid = req.query.gid;
+	let cid = req.query.cid;
+	if(gid == "" || isNaN(gid)) {return res.json({"Status": "Error", "info": "Please check that you have entered a valid GID (Game ID!"});}
+	if(cid == "" || isNaN(cid)) {return res.json({"Status": "Error", "info": "Please check that you have entered a valid CID (Cheat ID)!"});}
+	fs.readdir('./views/pages/cheats', (err, count) => {
+		if(gid < count.length) {
+			json = JSON.parse(fs.readFileSync(`./views/pages/cheats/${gid}/codes.json`));
+			if(!json[cid]) {return res.json({"Status": "Error", "info": "Unknown cheat code"});}
+			return res.json(json[cid]);
+		} else {return res.json({"Status": "Error", "info": "Unknown games"});}
 	});
 });
 

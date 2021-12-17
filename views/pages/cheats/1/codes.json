@@ -3,6 +3,7 @@
 		"id": 0,
 		"title": "Dark Theme",
 		"description": "5.5.4 - 5.5.5",
+		"author": "",
 		"cafe_code": {
 			"enabled": true,
 			"code": "00020000 105DD2A8\nLLLLLLLL 00000000"
@@ -18,6 +19,7 @@
 		"id": 1,
 		"title": "Dark Theme",
 		"description": "Before 5.5.4",
+		"author": "",
 		"cafe_code": {
 			"enabled": true,
 			"code": "00020000 105DD0A8\nLLLLLLLL 00000000"

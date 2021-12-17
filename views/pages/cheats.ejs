@@ -4,7 +4,7 @@
 		<%- include("../essentials") -%>
 		<title>uCodes - Cheat Codes</title>
 	</head>
-	<body>
+	<body class="disable-transition">
 		<%- include('../header')-%>
 		<div id="container">
 			<div id="content">
@@ -30,7 +30,11 @@
 							<td><%= data[i].version %></td>
 							<td><%= data[i].region %></td>
 							<!--<td><%= data[i].titleid %></td>-->
-							<td><%= data[i].totalcodes %></td>
+							<% if(!data[i].displayed) { %>
+								<td><%= data[i].totalcodes %></td>
+							<% } else { %>
+								<td><%= data[i].displayed %></td>
+							<% } %>
 						</tr>
 						<% } %>
 					</tbody>

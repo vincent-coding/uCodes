@@ -2,49 +2,108 @@
 <html>
 	<head>
 		<%- include("../essentials") -%>
-		<title>uCodes - Cheat Codes [<%= game_info['name'] %>]</title>
+		<title>uCodes - Cheat Codes [<%= game_info['name'] %> | <%= game_info['version'] %> | <%= game_info['region'] %>]</title>
 	</head>
-	<body id="body">
-		<%- include('../header')-%>
+	<% if(game_info['name'] == "WiiU Menu") { %>
+		<body id="body" class="disable-transition">
+	<% } else { %>
+		<body id="body" class="disable-transition" style="background-image: url('img/background/<%= game_info['name'].toLowerCase().replace(/\s/g, '') %>.png');">
+	<% } %>
+	<%- include('../header')-%>
 		<div id="container">
 			<div id="content">
-				<table>
-					<thead>
-						<caption style="font-size: 20px; text-align: left;">
+				<div class="game-info-container">
+					<div class="game-icon">
+						<img src="img/icons/<%= game_info['id'] %>.png" width="175" heigth="175" />
+					</div>
+					<div class="game-info">
+						<p>
 							Title: <i><%= game_info['name'] %></i><br />
 							Version: <i><%= game_info['version'] %></i><br />
 							Region: <i><%= game_info['region'] %></i><br />
 							<% if(game_info['name'] == "WiiU Menu") {%>
-							Title ID: <i><%= game_info['titleid'] %><br />
+							Title ID: <i><%= game_info['titleid'] %></i><br />
 							<% } %>
-							<!--Title ID: <i><%= game_info['titleid'] %></i><br />-->
-							<!--Total Codes: <i><%= game_info['totalcodes'] %></i>-->
 							Total Codes: <i><%= total_count %></i>
-						</caption>
-						<tr>
-							<th>Title</th>
-							<th>Description</th>
-							<th>Show Code</th>
-						</tr>
-					</thead>
-					<tbody>
-						<% for(var i=0; i < data.length; i++) { %>
-							<% if(data[i].display == true) {%>
-							<tr>
-								<td><%= data[i].title %></td>
-								<td><%= data[i].description %></td>
-								<td><button class="show-button" id="<%= i %>" onclick="showPopUp(<%= i %>)" data-cafe-enabled="<%= data[i].cafe_code.enabled %>" data-cafe-code="<%= data[i].cafe_code.code %>" data-ugecko-enabled="<%= data[i].ugecko.enabled %>" data-ugecko-code="<%= data[i].ugecko.code %>" data-other="<%= data[i].other %>" data-name="<%= data[i].title %>">Show</button></td>
-							</tr>
-							<% } %>
+						</p>
+					</div>
+				</div>
+				<div class="cheat-search">
+					<div class="search-container">
+						<% if(search != null) { %>
+							<input type="text" id="search-textbox" placeholder="Search..." value="<%= search %>" />
+						<% } else { %>
+							<input type="text" id="search-textbox" placeholder="Search..." />
 						<% } %>
-					</tbody>
-				</table>
+						<button id="search-button">
+							<img src="./img/search.png" />
+						</button>
+					</div>
+				</div>
+				<% if(found == 0) {%>
+					<p class="dialog" id="error">No results were found.</p>
+				<% } else {%>
+					<% if(found != null && found > 0) { %>
+						<p class="dialog" id="found"><%= found %> results were found.</p>
+					<% } %>
+					<table>
+						<thead>
+							<tr>
+								<th>Title</th>
+								<th>Author</th>
+								<th>Description</th>
+								<th>Show Code</th>
+							</tr>
+						</thead>
+						<tbody>
+							<% for(var i=0; i < data.length; i++) { %>
+								<% if(data[i].display == true) {%>
+								<tr>
+									<td><%= data[i].title %></td>
+									<% if(data[i].author == "") {%>
+										<td><i>Unknown</i></td>
+									<% } else { %>
+										<td><%= data[i].author %></td>
+									<% } %>
+
+									<% if(data[i].description == "") {%>
+										<td><i>No description set</i></td>
+									<% } else { %>
+										<td><%= data[i].description %></td>
+									<% } %>
+
+									<td><button class="show-button" id="<%= i %>" onclick="showPopUp(<%= i %>)" data-id="<%= data[i].id %>" data-cafe-enabled="<%= data[i].cafe_code.enabled %>" data-cafe-code="<%= data[i].cafe_code.code %>" data-ugecko-enabled="<%= data[i].ugecko.enabled %>" data-ugecko-code="<%= data[i].ugecko.code %>" data-other="<%= data[i].other %>" data-name="<%= data[i].title %>" data-author="<%= data[i].author %>">Show</button></td>
+								</tr>
+								<% } %>
+							<% } %>
+						</tbody>
+					</table>
+				<% } %>
+				<div class="dialog" id="suggest">
+					<p>
+						Can't find a cheat code? Want to add one?<br />
+						<a href="https://github.com/vincent-coding/uCodes/issues" target="_blank" style="color: white;">Make your request here.</a>
+					</p>
+				</div>
 			</div>
-			<div id="modal">
+
+			<% if(showcode == null || search != null) {%>
+				<div id="modal" style="display: none;">
+			<% } else {%>
+				<div id="modal" style="display: block;">
+			<% } %>
 				<div id="modal-container">
 					<div id="modal-header">
 						<span id="modal-close">&times;</span>
-						<p id="modal-title"></p>
+						<% if(showcode != null && search == null) { %>
+							<% if(data[showcode].author != "") {%>
+								<p id="modal-title"><%= data[showcode].title %> <span id="modal-author">by <u><%= data[showcode].author %></u></span></p>
+							<% } else {%>
+								<p id="modal-title"><%= data[showcode].title %></p>
+							<% } %>
+						<% } else {%>
+							<p id="modal-title"></p>
+						<% } %>
 					</div>
 					<div id="modal-content">
 						<div id="modal-cafe-code">
@@ -53,8 +112,13 @@
 									Cafe Code
 								</a>
 							</p>
-							<textarea id="textarea-cafe-code"></textarea><br />
-							<button class="copy-button" id="copy-cafe-code" onclick="copyCode(0)">Copy</button>
+							<% if(showcode != null && search == null && data[showcode].cafe_code.enabled == true) { %>
+								<textarea id="textarea-cafe-code"><%= data[showcode].cafe_code.code %></textarea><br />
+								<button class="copy-button" id="copy-cafe-code" onclick="copyCode(0)">Copy</button>
+							<% } else {%>
+								<textarea id="textarea-cafe-code" disabled></textarea>
+								<button class="copy-button" id="copy-cafe-code" onclick="copyCode(0)" disabled>Copy</button>
+							<% } %>
 						</div>
 						<div id="modal-ugecko">
 							<p>
@@ -62,12 +126,19 @@
 									uGecko
 								</a>
 							</p>
-							<textarea id="textarea-ugecko"></textarea><br />
-							<button class="copy-button" id="copy-ugecko" onclick="copyCode(1)">Copy</button>
+							<% if(showcode != null && search == null && data[showcode].ugecko.enabled == true) { %>
+								<textarea id="textarea-ugecko"><%= data[showcode].ugecko.code %></textarea>
+								<button class="copy-button" id="copy-ugecko" onclick="copyCode(1)">Copy</button>
+							<% } else {%>
+								<textarea id="textarea-ugecko" disabled></textarea>
+								<button class="copy-button" id="copy-ugecko" onclick="copyCode(1)" disabled>Copy</button>
+							<% } %>
+							
 						</div>
 						<div id="modal-other">
 							<p>Other information</p>
-							<textarea readonly id="textarea-other-info"></textarea><br />
+							<textarea readonly id="textarea-other-info"><% if(showcode != null && search == null) { %><%= data[showcode].other %><% } %></textarea><br />
+							<button class="copy-button" onclick="copyCode(2)">Get permanent link</button>
 						</div>
 					</div>
 				</div>
@@ -75,6 +146,13 @@
 		</div>
 		<%- include('../footer')-%>
 		<script type="text/javascript">
+			let gameID = <%= game_info['id'] %>;
+			<% if(showcode != null) {%>
+				let cheatID = <%= showcode %>;
+			<% } else { %>
+				let cheatID = 0;
+			<% } %>
+
 			let modal = document.getElementById("modal"),
 				close = document.getElementById("modal-close"),
 				body  = document.getElementById("body");
@@ -88,7 +166,11 @@
 				if(id < <%= game_info['totalcodes'] %> && id >= 0) {
 					let el = document.getElementById(id);
 					if(typeof(el) != undefined && el != null) {
-						document.getElementById("modal-title").innerHTML = "Cheat Code - " + el.dataset.name;
+						if(el.dataset.author == "") {
+							document.getElementById("modal-title").innerHTML = el.dataset.name;
+						} else {
+							document.getElementById("modal-title").innerHTML = `${el.dataset.name} <span id="modal-author">by <u>${el.dataset.author}</u></span>`;
+						}
 						if(el.dataset.cafeEnabled.toLowerCase() == "true") {
 							document.getElementById("textarea-cafe-code").value = el.dataset.cafeCode;
 							document.getElementById("textarea-cafe-code").disabled = false;
@@ -108,6 +190,9 @@
 							document.getElementById("copy-ugecko").disabled = true;
 						}
 						document.getElementById("textarea-other-info").value = el.dataset.other;
+						
+						cheatID = el.dataset.id;
+
 						modal.style.display = "block";
 						body.style.overflow = "hidden";
 					}
@@ -117,11 +202,32 @@
 			function copyCode(i) {
 				if(i == 0) {
 					document.getElementById("textarea-cafe-code").select();
-				} else {
+				} else if(i == 1) {
 					document.getElementById("textarea-ugecko").select();
+				} else {
+					let tmp_imput = document.createElement("input");
+					tmp_imput.value = `https://ucodes.herokuapp.com/cheats?id=${gameID}&showcode=${cheatID}`
+					document.body.appendChild(tmp_imput);
+					tmp_imput.select();
+					document.execCommand("copy");
+					document.body.removeChild(tmp_imput);
+					alert("Link successfully copied.")
+					return;
 				}
 				document.execCommand("copy");
 			}
+
+			document.getElementById("search-textbox").addEventListener("keyup", function(e) {
+				if(e.keyCode === 13) {
+					e.preventDefault();
+					document.getElementById("search-button").click();
+				}
+			});
+
+			document.getElementById("search-button").onclick = function() {
+				let search_value = document.getElementById("search-textbox").value;
+				window.location = `/cheats?id=${gameID}&search=${search_value}`;
+			};
 		</script>
 	</body>
 </html>

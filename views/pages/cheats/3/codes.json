@@ -1,0 +1,18 @@
+[
+	{
+		"id": 0,
+		"title": "Lorem ipsum",
+		"description": "dolor sit amet",
+		"author": "consectetur adipiscing",
+		"cafe_code": {
+			"enabled": false,
+			"code": ""
+		},
+		"ugecko": {
+			"enabled": false,
+			"code": ""
+		},
+		"other": "Ut non neque et tortor sollicitudin luctus. Suspendisse potenti. Nam a nunc quis justo tempus lobortis vitae eu libero. Ut cursus nunc convallis, consectetur nibh sed, maximus orci. Quisque malesuada lacus turpis, eu volutpat arcu pellentesque id. Nunc est turpis, aliquam vitae diam in, varius sollicitudin elit. Proin vel sapien vitae ante tincidunt accumsan vel et dui. Mauris semper non sem a convallis. Sed gravida interdum tempor. Vivamus cursus eu ipsum eu commodo.",
+		"display": true
+	}
+]

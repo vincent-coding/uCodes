@@ -3,11 +3,8 @@
 	<head>
 		<%- include("../essentials") -%>
 		<title>uCodes - Homepage</title>
-		<link rel="stylesheet" href="css/github-dark.css" />
-		<script src="js/highlight.js"></script>
-		<script>hljs.highlightAll();</script>
 	</head>
-	<body>
+	<body class="disable-transition">
 		<%- include('../header')-%>
 		<div id="container">
 			<div id="content">
@@ -125,13 +122,13 @@ else:
 					<div class="example-section">
 						<div class="curl-example">
 							<p class="title-example">Curl</p>
-							<pre class="pre"><code class="language-bash code">curl "https://ucodes.herokuapp.com/api/info?id=0"</code></pre>
+							<pre class="pre"><code class="language-bash code">curl "https://ucodes.herokuapp.com/api/info?id=1"</code></pre>
 						</div>
 						<div class="python-example">
 							<p class="title-example">Python</p>
 							<pre class="pre"><code class="language-py code">import requests
 
-r = requests.get("https://ucodes.herokuapp.com/api/info?id=0")
+r = requests.get("https://ucodes.herokuapp.com/api/info?id=1")
 
 if r.status_code == 200:
     print(r.json())
@@ -186,7 +183,8 @@ else:
      	"enabled": true,
      	"code": ""
      },
-     "other": "Only works on 200cc or online 150cc."
+     "other": "Only works on 200cc or online 150cc.",
+     "display": true
   },
   {
      "id": 1,
@@ -200,7 +198,8 @@ else:
      	"enabled": true,
      	"code": ""
      },
-     "other": ""
+     "other": "",
+     "display": true
   },
   {
      "id": 2,
@@ -214,7 +213,8 @@ else:
      	"enabled": true,
      	"code": ""
      },
-     "other": "Boosts at the maximum distance at the start. Only works if you do not hold accelerate until after you have boosted otherwise you will blow out."
+     "other": "Boosts at the maximum distance at the start. Only works if you do not hold accelerate until after you have boosted otherwise you will blow out.",
+     "display": true
   },
   {
      "id": 3,
@@ -228,7 +228,8 @@ else:
      	"enabled": true,
      	"code": ""
      },
-     "other": ""
+     "other": "",
+     "display": true
   }
 ]</code></pre>
 									</td>
@@ -246,6 +247,78 @@ else:
 							<pre class="pre"><code class="language-py code">import requests
 
 r = requests.get("https://ucodes.herokuapp.com/api/cheats?id=0")
+
+if r.status_code == 200:
+    print(r.json())
+else:
+    print("Error")</code></pre>
+						</div>
+						<div class="nodejs-example">
+							<p class="title-example">Node.JS</p>
+							<pre class="pre"><code class="language-js code"></code></pre>
+						</div>
+					</div>
+				</div>
+				<hr class="separator" />
+				<div class="section">
+					<div class="header-section">
+						<div class="title-section">
+							<p>
+								<span class="type-get">GET</span> /cheatinfo
+							</p>
+						</div>
+						<div class="desc-section">
+							<p>
+								Allows to retrieve the information of a cheat code using its id.
+							</p>
+						</div>
+					</div>
+					<div class="info-section">
+						<table>
+							<caption>Responses <span class="info-type">application/json</span></caption>
+							<thead>
+								<tr>
+									<th>Status Code</th>
+									<th>Examples</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<span class="info-round-green"></span>200
+									</td>
+									<td>
+<pre class="json-style"><code class="language-json">{
+  "id": 0,
+  "title": "Dark Theme",
+  "description": "5.5.4 - 5.5.5", 
+  "author": "",
+  "cafe_code": {
+    "enabled": true,
+    "code": "00020000 105DD2A8\nLLLLLLLL 00000000"
+  },
+  "ugecko": {
+  	"enabled": true,
+  	"code": "gecko.poke32(0x105DD2A8, 0xLLLLLLLL)"
+  },
+  "other": "Replaces LLLLLLLL with one of the desired values:\n\n40000000 -> White\n3F800000 -> Default\n3E800000 -> Light Grey\n3D800000 -> Grey (Often used as a dark theme)\n3C800000 -> Dark Grey\n3B800000 -> Very Dark Grey\n00000000 -> Black",
+  "display": true
+}</code></pre>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="example-section">
+						<div class="curl-example">
+							<p class="title-example">Curl</p>
+							<pre class="pre"><code class="language-bash code">curl "https://ucodes.herokuapp.com/api/cheatinfo?gid=1&cid=0"</code></pre>
+						</div>
+						<div class="python-example">
+							<p class="title-example">Python</p>
+							<pre class="pre"><code class="language-py code">import requests
+
+r = requests.get("https://ucodes.herokuapp.com/api/cheatinfo?gid=1&cid=0")
 
 if r.status_code == 200:
     print(r.json())

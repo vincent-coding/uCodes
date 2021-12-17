@@ -5,4 +5,12 @@
 <script type="text/javascript">
 	Turbolinks.start()
 </script>
-<link rel="stylesheet" href="css/style.css" />
+<link id="page-style" rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/github-dark.css" />
+<script src="js/highlight.js"></script>
+<script>
+	hljs.highlightAll();
+
+	function removeBodyClass() {document.body.classList.remove('disable-transition')}
+	window.onload = removeBodyClass;
+</script>

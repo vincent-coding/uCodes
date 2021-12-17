@@ -3,6 +3,7 @@
 		"id": 0,
 		"title": "500cc",
 		"description": "Allows you to set the speed of karts at 500CC",
+		"author": "DarkFlare",
 		"cafe_code": {
 			"enabled": true,
 			"code": "020200A0 30699564\n4151999A 00000004\n00000000 00000000"
@@ -18,6 +19,7 @@
 		"id": 1,
 		"title": "Always In Star Effect",
 		"description": "Gives you the star effect all the time ",
+		"author": "Megabyte918",
 		"cafe_code": {
 			"enabled": true,
 			"code": "30000000 3FBA92BC\n35000000 50000000\n31000000 00000020\n30100000 00000000\n35000000 50000000\n31000000 00000160\n00120000 00000010\nD0000000 DEADCAFE"
@@ -33,6 +35,7 @@
 		"id": 2,
 		"title": "Always boost on race start",
 		"description": "Allows you to always start the game with a boosted start",
+		"author": "Megabyte918",
 		"cafe_code": {
 			"enabled": true,
 			"code": "30000000 3FBA92BC\n10000000 50000000\n31000000 00000020\n30100000 00000000\n10000000 50000000\n31000000 00000075\n03120000 00000000\n00000000 00000000\n30000000 3FBA92BC\n35000000 50000000\n31000000 00000020\n30100000 00000000\n35000000 50000000\n31000000 0000015C\n00120000 3F7D2F1B\nD0000000 DEADCAFE"
@@ -48,6 +51,7 @@
 		"id": 3,
 		"title": "Always in anti-gravity",
 		"description": "Allows permanent activation of anti-gravity mode",
+		"author": "Megabyte918",
 		"cafe_code": {
 			"enabled": true,
 			"code": "30000000 4443BB4C\n35000000 50000000\n05120000 00000075\n00000000 00000000\n30000000 3FBA92BC\n35000000 50000000\n31000000 00000020\n30100000 00000000\n35000000 50000000\n31000000 00000154\n00120000 3F800000\nD0000000 DEADCAFE"
@@ -63,15 +67,672 @@
 		"id": 4,
 		"title": "Amiibo Suit Replacement",
 		"description": "",
+		"author": "Lüî§35000vr",
 		"cafe_code": {
 			"enabled": true,
-			"code": "Mario Suit\n00020000 105B49A0\nXXXXXXXX 00000000\n \nLuigi Suit\n00020000 105B49A4\nXXXXXXXX 00000000\n \nYoshi Suit\n00020000 105B49A8\nXXXXXXXX 00000000\n\nPeach Suit\n00020000 105B49AC\nXXXXXXXX 00000000\n\nToad Suit\n00020000 105B49B0\nXXXXXXXX 00000000\n \nDonkey Kong Suit\n00020000 105B49B4\nXXXXXXXX 00000000\n\nBowser Suit\n00020000 105B49B8\nXXXXXXXX 00000000\n\nWario Suit\n00020000 105B49BC\nXXXXXXXX 00000000\nCaptain Falcon Suit\n00020000 105B49C0\nXXXXXXXX 00000000\n \nFox McCloud Suit\n00020000 105B49C4\nXXXXXXXX 00000000\nSamus Aran Suit\n00020000 105B49C8\nXXXXXXXX 00000000\n \nLink Suit\n00020000 105B49CC\nXXXXXXXX 00000000\n \nKirby Suit\n00020000 105B49D4\nXXXXXXXX 00000000\n \nRosalina Suit\n00020000 105B49D8\nXXXXXXXX 00000000\n \nPikmin Suit\n00020000 105B49DC\nXXXXXXXX 00000000\n\nAnimal Crossing Suit\n00020000 105B49E0\nXXXXXXXX 00000000\n\nPAC-MAN Suit\n00020000 105B49E4\nXXXXXXXX 00000000\n \nMega Man Suit\n00020000 105B49E8\nXXXXXXXX 00000000\n \nSonic Suit\n00020000 105B49EC\nXXXXXXXX 00000000"
+			"code": "Mario Suit\n00020000 105B49A0\nLLLLLLLL 00000000\n \nLuigi Suit\n00020000 105B49A4\nLLLLLLLL 00000000\n \nYoshi Suit\n00020000 105B49A8\nLLLLLLLL 00000000\n\nPeach Suit\n00020000 105B49AC\nLLLLLLLL 00000000\n\nToad Suit\n00020000 105B49B0\nLLLLLLLL 00000000\n \nDonkey Kong Suit\n00020000 105B49B4\nLLLLLLLL 00000000\n\nBowser Suit\n00020000 105B49B8\nLLLLLLLL 00000000\n\nWario Suit\n00020000 105B49BC\nLLLLLLLL 00000000\nCaptain Falcon Suit\n00020000 105B49C0\nLLLLLLLL 00000000\n \nFox McCloud Suit\n00020000 105B49C4\nLLLLLLLL 00000000\n\nSamus Aran Suit\n00020000 105B49C8\nLLLLLLLL 00000000\n \nLink Suit\n00020000 105B49CC\nLLLLLLLL 00000000\n \nKirby Suit\n00020000 105B49D4\nLLLLLLLL 00000000\n \nRosalina Suit\n00020000 105B49D8\nLLLLLLLL 00000000\n \nPikmin Suit\n00020000 105B49DC\nLLLLLLLL 00000000\n\nAnimal Crossing Suit\n00020000 105B49E0\nLLLLLLLL 00000000\n\nPAC-MAN Suit\n00020000 105B49E4\nLLLLLLLL 00000000\n \nMega Man Suit\n00020000 105B49E8\nLLLLLLLL 00000000\n \nSonic Suit\n00020000 105B49EC\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "# Mario Suit\ngecko.poke32(0x105B49A0, 0xLLLLLLLL)\n\n# Luigi Suit\ngecko.poke32(0x105B49A4, 0xLLLLLLLL)\n\n# Yoshi Suit\ngecko.poke32(0x105B49A8, 0xLLLLLLLL)\n\n# Peach Suit\ngecko.poke32(0x105B49AC, 0xLLLLLLLL)\n\n# Toad Suit\ngecko.poke32(0x105B49B0, 0xLLLLLLLL)\n\n# Donkey Kong Suit\ngecko.poke32(0x105B49B4, 0xLLLLLLLL)\n\n# Bowser Suit\ngecko.poke32(0x105B49B8, 0xLLLLLLLL)\n\n# Wario Suit\ngecko.poke32(0x105B49BC, 0xLLLLLLLL)\n\n# Captain Falcon Suit\ngecko.poke32(0x105B49C0, 0xLLLLLLLL)\n\n# Fox McCloud Suit\ngecko.poke32(0x105B49C4, 0xLLLLLLLL)\n\n# Samus Aran Suit\ngecko.poke32(0x105B49C8, 0xLLLLLLLL)\n\n# Link Suit\ngecko.poke32(0x105B49CC, 0xLLLLLLLL)\n\n# Kirby Suit\ngecko.poke32(0x105B49D4, 0xLLLLLLLL)\n\n# Rosalina Suit\ngecko.poke32(0x105B49D8, 0xLLLLLLLL)\n\n# Pikmin Suit\ngecko.poke32(0x105B49DC, 0xLLLLLLLL)\n\n# Animal Crossing Suit\ngecko.poke32(0x105B49E0, 0xLLLLLLLL)\n\n# PAC-MAN Suit\ngecko.poke32(0x105B49E4, 0xLLLLLLLL)\n\n# Mega Man Suit\ngecko.poke32(0x105B49E8, 0xLLLLLLLL)\n\n# Sonic Suit\ngecko.poke32(0x105B49EC, 0xLLLLLLLL)"
+		},
+		"other": "This code will allow you to replace any amiibo suit that is enabled, at least you will need a suit enabled to replace it with any of the suits available in the game, to apply this code you will need to do the following:\n \n1 - Enter the game of Mario Kart 8.\n2 - In the selection menu of the game press the + button, this is to enter the menu Mii Racing Suits.\n3 - In the menu of Mii Racing Suits apply the code.\n4 - When you select your mii and the suit you have modified, it will be replaced by the suit you have chosen.\n\nReplace L's with your desired suit:\n\n105B49F0 = Amiibo Mii Racing Suit Mario\n105B49F4 = Amiibo Mii Racing Suit Luigi\n105B49F8 = Amiibo Mii Racing Suit Yoshi\n105B49FC = Amiibo Mii Racing Suit Peach\n105B4A00 = Amiibo Mii Racing Suit Toad\n105B4A04 = Amiibo Mii Racing Suit Donkey Kong\n105B4A08 = Amiibo Mii Racing Suit Bowser\n105B4A0C = Amiibo Mii Racing Suit Wario\n105B4A10 = Amiibo Mii Racing Suit Captain Falcon\n105B4A14 = Amiibo Mii Racing Suit Fox McCloud\n105B4A18 = Amiibo Mii Racing Suit Samus Aran\n105B4A1C = Amiibo Mii Racing Suit Link\n105B4A24 = Amiibo Mii Racing Suit Kirby\n105B4A28 = Amiibo Mii Racing Suit Rosalina\n105B4A2C = Amiibo Mii Racing Suit Pikmin\n105B4A30 = Amiibo Mii Racing Suit Animal Crossing\n105B4A34 = Amiibo Mii Racing Suit PAC-MAN\n105B4A38 = Amiibo Mii Racing Suit Mega Man\n105B4A3C = Amiibo Mii Racing Suit Sonic",
+		"display": true
+	},
+	{
+		"id": 5,
+		"title": "Banana Size Modifier",
+		"description": "Modifies the size of bananas",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 10516B90\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x10516B90, 0xLLLLLLLL)"
+		},
+		"other": "Replace L's with your desired value. Hitbox size is directly proportionate to the banana's size.\n00000000 -> Invisible\n3F800000 -> Normal\n3E800000 -> Small\n40000000 -> Big\n41000000 -> Extra Big",
+		"display": true
+	},
+	{
+		"id": 6,
+		"title": "Blue Shell Size Modifier",
+		"description": "Modifies the size of blue shells",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 1051BBE8\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x1051BBE8, 0xLLLLLLLL)"
+		},
+		"other": "Also effects the size of explosions.\n\nReplace L's with your desired value.\n00000000 -> Invisible\n3F800000 -> Normal\n3E800000 -> Small\n40000000 -> Big\n41000000 -> Extra Big",
+		"display": true
+	},
+	{
+		"id": 7,
+		"title": "Bob-omb No Damage Explosion",
+		"description": "Disables explosion caused by bob-omb",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 10517B8C\n80800000 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x10517B8C, 0x80800000)"
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 8,
+		"title": "Boomerang Deleter",
+		"description": "",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 105182DC\n43000000 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x105182DC, 0x43000000)"
+		},
+		"other": "This code deletes the boomerang thrown by any player, you will never receive damage by this item.",
+		"display": true
+	},
+	{
+		"id": 9,
+		"title": "Boomerang Size Modifier",
+		"description": "Modifies the size of boomerang",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 10518298\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x10518298, 0xLLLLLLLL)"
+		},
+		"other": "Replace L's with your desired value.\n00000000 -> Invisible\n3F800000 -> Normal\n3E800000 -> Small\n40000000 -> Big\n41000000 -> Extra Big",
+		"display": true
+	},
+	{
+		"id": 10,
+		"title": "Bullet Bill Controller",
+		"description": "",
+		"author": "Mega-Mew",
+		"cafe_code": {
+			"enabled": true,
+			"code": "09020000 XXXXXXXX\nYYYYYYYY 00000000\n00020000 10050004\n00000001 00000000\nD0000000 DEADCAFE\n09020000 XXXXXXXX\nYYYYYYYY 00000000\n00020000 10050004\n00000002 00000000\nD0000000 DEADCAFE\n03020000 10050004\n00000001 00000000\n30000000 4443BB4C\n35000000 50000000\n00100145 00000020\nD0000000 DEADCAFE\n03020000 10050004\n00000002 00000000\n30000000 4443BB4C\n35000000 50000000\n00100145 00000000\nD0000000 DEADCAFE"
 		},
 		"ugecko": {
 			"enabled": false,
 			"code": ""
 		},
-		"other": "This code will allow you to replace any amiibo suit that is enabled, at least you will need a suit enabled to replace it with any of the suits available in the game, to apply this code you will need to do the following:\n \n1 - Enter the game of Mario Kart 8.\n2 - In the selection menu of the game press the + button, this is to enter the menu Mii Racing Suits.\n3 - In the menu of Mii Racing Suits apply the code.\n4 - When you select your mii and the suit you have modified, it will be replaced by the suit you have chosen.\n\nReplace X's with your desired suit:\n\n105B49F0 = Amiibo Mii Racing Suit Mario\n105B49F4 = Amiibo Mii Racing Suit Luigi\n105B49F8 = Amiibo Mii Racing Suit Yoshi\n105B49FC = Amiibo Mii Racing Suit Peach\n105B4A00 = Amiibo Mii Racing Suit Toad\n105B4A04 = Amiibo Mii Racing Suit Donkey Kong\n105B4A08 = Amiibo Mii Racing Suit Bowser\n105B4A0C = Amiibo Mii Racing Suit Wario\n105B4A10 = Amiibo Mii Racing Suit Captain Falcon\n105B4A14 = Amiibo Mii Racing Suit Fox McCloud\n105B4A18 = Amiibo Mii Racing Suit Samus Aran\n105B4A1C = Amiibo Mii Racing Suit Link\n105B4A24 = Amiibo Mii Racing Suit Kirby\n105B4A28 = Amiibo Mii Racing Suit Rosalina\n105B4A2C = Amiibo Mii Racing Suit Pikmin\n105B4A30 = Amiibo Mii Racing Suit Animal Crossing\n105B4A34 = Amiibo Mii Racing Suit PAC-MAN\n105B4A38 = Amiibo Mii Racing Suit Mega Man\n105B4A3C = Amiibo Mii Racing Suit Sonic",
+		"other": "Replace X's with desired controller address and replace Y's with desired button activator.\nhttps://github.com/Megabyte918/MK8-Memory-Notes/blob/master/ACTIVATORS.md for more info.",
 		"display": false
+	},
+	{
+		"id": 11,
+		"title": "Butt-Sliding",
+		"description": "",
+		"author": "CosmoCortney",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 105232D0\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x105232D0, 0xLLLLLLLL)"
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 12,
+		"title": "Can't Fire Items",
+		"description": "",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 1051F3FC\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x1051F3FC, 0xLLLLLLLL)"
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 13,
+		"title": "Character Icon Modifier",
+		"description": "",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "Toad Icon\n00020000 3BC42518\nLLLLLLLL 00000000\n\nWaluigi Icon\n00020000 3BC42530\nLLLLLLLL 00000000\n\nRosalina Icon\n00020000 3BC42534\nLLLLLLLL 00000000\n\nBaby Mario Icon\n00020000 3BC42548\nLLLLLLLL 00000000\n\nBaby Luigi Icon\n00020000 3BC4254C\nLLLLLLLL 00000000\n\nBaby Peach Icon\n00020000 3BC42550\nLLLLLLLL 00000000\n\nBaby Daisy Icon\n00020000 3BC42554\nLLLLLLLL 00000000\n\nRoy Icon\n00020000 3BC42570\nLLLLLLLL 00000000\n\nMii Icon\n00020000 3BC42578\nLLLLLLLL 00000000\n\nMario Icon\n00020000 3BC42504\nLLLLLLLL 00000000\n\nLuigi Icon\n00020000 3BC42508\nLLLLLLLL 00000000\n\nPeach Icon\n00020000 3BC4250C\nLLLLLLLL 00000000\n\nDaisy Icon\n00020000 3BC42510\nLLLLLLLL 00000000\n\nYoshi Icon\n00020000 3BC42514\nLLLLLLLL 00000000\n\nBowser Icon\n00020000 3BC42524\nLLLLLLLL 00000000\n\nWario Icon\n00020000 3BC4252C\nLLLLLLLL 00000000\n\nShy guy Icon\n00020000 3BC42544\nLLLLLLLL 00000000\n\nLarry Icon\n00020000 3BC4255C\nLLLLLLLL 00000000\n\nLemmy Icon\n00020000 3BC42560\nLLLLLLLL 00000000\n\nWendy Icon\n00020000 3BC42564\nLLLLLLLL 00000000\n\n? Question Icon\n00020000 3BC42500\nLLLLLLLL 00000000\n\nDonkey Kong Icon\n00020000 3BC42528\nLLLLLLLL 00000000\n\nLakitu Icon\n00020000 3BC42540\nLLLLLLLL 00000000\n\nLudwig Icon\n00020000 3BC42568\nLLLLLLLL 00000000\n\nIggy Icon\n00020000 3BC4256C\nLLLLLLLL 00000000\n\nMorton Icon\n00020000 3BC42574\nLLLLLLLL 00000000\n\nLink Icon\n00020000 3BC42580\nLLLLLLLL 00000000\n\nIsabelle Icon\n00020000 3BC42588\nLLLLLLLL 00000000\n\nTanooki Mario Icon\n00020000 3BC4257C\nLLLLLLLL 00000000\n\nVillager Girl Icon\n00020000 3BC42594\nLLLLLLLL 00000000\n\nBaby Rosalina Icon\n00020000 3BC42558\nLLLLLLLL 00000000\n\nDry Bowser Icon\n00020000 3BC42590\nLLLLLLLL 00000000\n\nToadette Icon\n00020000 3BC4251C\nLLLLLLLL 00000000\n\nKoopa Troopa Icon\n00020000 3BC42520\nLLLLLLLL 00000000\n\nMetal Mario Icon\n00020000 3BC42538\nLLLLLLLL 00000000\n\nPink Gold Peach Icon\n00020000 3BC4253C\nLLLLLLLL 00000000\n\nVillager Boy Icon\n00020000 3BC42584\nLLLLLLLL 00000000\n\nCat Peach Icon\n00020000 3BC4258C\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": false,
+			"code": ""
+		},
+		"other": "Replace L's with your desired value.\n\n105D4E48 -> Toad\n105D4E50 -> Waluigi\n105D4E58 -> Rosalina\n105D4E60 -> Baby Mario\n105D4E68 -> Baby Luigi\n105D4E70 -> Baby Peach\n105D4E78 -> Baby Daisy\n105D4E80 -> Roy\n105D4E84 -> Mii\n105D4E88 -> Mario\n105D4E90 -> Luigi\n105D4E98 -> Peach\n105D4EA0 -> Daisy\n105D4EA8 -> Yoshi\n105D4EB0 -> Bowser\n105D4EB8 -> Wario\n105D4EC0 -> Shy guy\n105D4EC8 -> Larry\n105D4ED0 -> Lemmy\n105D4ED8 -> Wendy\n105D4EE4 -> ? Question Icon\n105D4EEC -> Donkey Kong\n105D4EF0 -> Lakitu\n105D4EF8 -> Ludwig\n105D4F00 -> Iggy\n105D4F08 -> Morton\n105D4F10 -> Link\n105D4F18 -> Isabelle\n105D4F20 -> Tanooki Mario\n105D4F2C -> Villager Girl\n105D4F38 -> Baby Rosalina\n105D4F44 -> Dry Bowser\n105D4F50 -> Toadette\n105D4F5C -> Koopa Troopa\n105D4F68 -> Metal Mario\n105D4F74 -> Pink Gold Peach\n105D4F80 -> Villager Boy\n105D4F8C -> Cat Peach",
+		"display": true
+	},
+	{
+		"id": 14,
+		"title": "Coin Size Modifier",
+		"description": "Modifies the size of coins",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 10518A78\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x10518A78, 0xLLLLLLLL)"
+		},
+		"other": "Replace L's with your desired value.\n00000000 -> Invisible\n3F800000 -> Normal\n3E800000 -> Small\n40000000 -> Big\n41000000 -> Extra Big",
+		"display": true
+	},
+	{
+		"id": 15,
+		"title": "Fire Ball Effect Modifier",
+		"description": "",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 10519B7C\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x10519B7C, 0xLLLLLLLL)"
+		},
+		"other": "Replace L's with your desired value.\n00000000 = The fire balls will jump backward and forward.\n3F800000 = The fire balls will stay static until disappearing.\n47000000 = The fire balls freeze your Wii U (and freeze anyone nearby's Wii U?)",
+		"display": true
+	},
+	{
+		"id": 16,
+		"title": "Fire Ball Speed Modifier",
+		"description": "",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 10519B78\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x10519B78, 0xLLLLLLLL)"
+		},
+		"other": "Replace L's with your desired value.\n00000000 -> No Speed\n40000000 -> Double Speed\n41000000 -> Max Speed",
+		"display": true
+	},
+	{
+		"id": 17,
+		"title": "Freeze all CPU's",
+		"description": "",
+		"author": "CosmoCortney & DarkFlare",
+		"cafe_code": {
+			"enabled": true,
+			"code": "30000000 4443BB4C\n44000000 49000000\n31000000 001A6F5C\n00120000 00000000\n31000000 001A1C78\n00120000 00000000\n31000000 001A1C78\n00120000 00000000\n31000000 001A1C78\n00120000 00000000\n31000000 001A1C78\n00120000 00000000\n31000000 001A1C78\n00120000 00000000\n31000000 001A1C78\n00120000 00000000\n31000000 001A1C78\n00120000 00000000\n31000000 001A1C78\n00120000 00000000\n31000000 001A1C78\n00120000 00000000\n31000000 001A1C78\n00120000 00000000\n31000000 001A1C78\n00120000 00000000\nD0000000 DEADCAFE"
+		},
+		"ugecko": {
+			"enabled": false,
+			"code": ""
+		},
+		"other": "Freezes all CPU's. (offline only)",
+		"display": true
+	},
+	{
+		"id": 18,
+		"title": "Gamma Modifier",
+		"description": "",
+		"author": "Divengerss",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 10620CE4\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x10620CE4, 0xLLLLLLLL)"
+		},
+		"other": "Allows you to change the gamma of your game but also changes the size of the screen\nwhen you leave a party or you start again.\n\nReplace L's with your desired value.\n3FE00000 = Bright\n3F800000 = Normal\n3FD9999A = x1.7\n3F000000 = Dark\n3DCCCCCD = Very Dark",
+		"display": true
+	},
+	{
+		"id": 19,
+		"title": "Golden Mushroom is always white",
+		"description": "",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 1051AF10\n00000000 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x1051AF10, 0x00000000)"
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 20,
+		"title": "Grand Prix Complete",
+		"description": "Gives every cup a gold trophy + 3 stars",
+		"author": "3dsiziritai",
+		"cafe_code": {
+			"enabled": true,
+			"code": "2F74710C 03030303\n2F747110 03030303\n2F747114 03030303\n2F74712C 03030303\n2F747130 03030303\n2F747134 03030303\n2F74714C 03030303\n2F747150 03030303\n2F747154 03030303\n2F74716C 03030303\n2F747170 03030303\n2F747174 03030303\n2F74718C 03030303\n2F747190 03030303\n2F747194 03030303\n2F74720C 03030303\n2F747210 03030303\n2F747214 03030303\n2F74722C 03030303\n2F747230 03030303\n2F747234 03030303\n2F74724C 03030303\n2F747250 03030303\n2F747254 03030303\n2F74726C 03030303\n2F747270 03030303\n2F747274 03030303\n2F74728C 03030303\n2F747290 03030303\n2F747294 03030303"
+		},
+		"ugecko": {
+			"enabled": false,
+			"code": ""
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 21,
+		"title": "Instant Acceleration",
+		"description": "",
+		"author": "DarkFlare",
+		"cafe_code": {
+			"enabled": true,
+			"code": "30000000 4443BB4C\n35000000 50000000\n05120000 00000075\n00000000 00000000\n09000000 1F604EA2\n00000080 00000000\n30000000 3FBA92BC\n46000000 49000000\n31000000 00000020\n30100000 00000000\n46000000 48000000\n12100000 000053AC\n13100000 000052E4\nD0000000 DEADCAFE"
+		},
+		"ugecko": {
+			"enabled": false,
+			"code": ""
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 22,
+		"title": "Instant Orange Drift",
+		"description": "",
+		"author": "Megabyte918",
+		"cafe_code": {
+			"enabled": true,
+			"code": "30000000 4443BB4C\n35000000 50000000\n05120000 00000075\n00000000 00000000\n30000000 3FBA92BC\n35000000 50000000\n31000000 00000020\n30100000 00000000\n35000000 50000000\n31000000 000055A8\n00120000 00000002\nD0000000 DEADCAFE"
+		},
+		"ugecko": {
+			"enabled": false,
+			"code": ""
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 23,
+		"title": "Invisible Bob-omb Explosion",
+		"description": "Deletes the explosions of the Bob-omb, however the explosions still cause damage",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 10517B90\n00000000 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x10517B90, 0x00000000)"
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 24,
+		"title": "Jumping Bob-omb",
+		"description": "Gives the effect of continuous jumping to Bomb-Ombs when being thrown",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 10517B0C\n00000000 3FC00000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x10517B0C, 0x3FC00000)"
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 25,
+		"title": "Jumping Fire Ball",
+		"description": "This code offers an effect of continuous jumping when throwing fire balls",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 10519B74\n00000000 40000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x10519B74, 0x40000000)"
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 26,
+		"title": "Jumping Red & Blue Shell",
+		"description": "Gives the effect of continuous jumping to red and blue shells when being thrown",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 1051CC58\n00000000 42000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x1051CC58, 0x42000000)"
+		},
+		"other": "Gives the effect of continuous jumping to red and blue shells when being thrown, Also has the effect of deleting the sensor of detecting the blue shell. The blue shell will continue its route without detecting the first player.",
+		"display": true
+	},
+	{
+		"id": 27,
+		"title": "Kart Size Modifier",
+		"description": "Allows you to change the size of the kart",
+		"author": "Megabyte918",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 105232D0\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x105232D0, 0xLLLLLLLL)"
+		},
+		"other": "Only applies to kart, not the player within the kart\n\nReplace L's with your desired value.\n3C000000 = No Kart\n3F800000 = Normal Size Kart\n40000000 = Double Size Kart\n41000000 = 8x Size Kart\n42000000 = 32x Size Kart\n43000000 = 128x Size Kart\n44000000 = 512x Size Kart",
+		"display": true
+	},
+	{
+		"id": 28,
+		"title": "Kill Lakitu",
+		"description": "This code eliminates the annoying lakitu that appears when the player drives backwards.",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 105B9038\n3FC00000 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x105B9038, 0x3FC00000)"
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 29,
+		"title": "Lakitu Size Modifier",
+		"description": "",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 1051485C\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x1051485C, 0xLLLLLLLL)"
+		},
+		"other": "Replace L's with desired value.\n\n00000000 -> Invisib\n3DC00000 -> Sma\n3F800000 -> Norm\n40000000 -> B\n41000000 -> Extra Big",
+		"display": true
+	},
+	{
+		"id": 30,
+		"title": "Max Red & Blue Shell Speed",
+		"description": "",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 1051CC6C\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x1051CC6C, 0xLLLLLLLL)"
+		},
+		"other": "Replace L's with desired value.\n\n3F8F0000 -> Increases the speed of red and blue shells when being thrown.\n40000000 -> You will have the possibility to control the blue shell, you will be able of hit players if they are near you.",
+		"display": true
+	},
+	{
+		"id": 31,
+		"title": "No Blooper Ink on Screen",
+		"description": "This code deletes the blooper effect on the player's screen, but still maintains the effect of the ink",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 1051A248\n00000000 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x1051A248, 0x00000000)"
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 32,
+		"title": "No Countdown",
+		"description": "",
+		"author": "Megabyte918",
+		"cafe_code": {
+			"enabled": true,
+			"code": "30000000 4443BB4C\n35000000 50000000\n00110075 00000001"
+		},
+		"ugecko": {
+			"enabled": false,
+			"code": ""
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 33,
+		"title": "No Item Indicator & Position",
+		"description": "Removes the item indicator and the position number shown in-game",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 105E9334\n00000000 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x105E9334, 0x00000000)"
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 34,
+		"title": "No Lightningbolt Flash",
+		"description": "This code deletes the flash & sky darknening effects when throwing lightning",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 1051E724\n80800000 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x1051E724, 0x80800000)"
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 35,
+		"title": "No Music",
+		"description": "",
+		"author": "Divengerss",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 105F6AE4\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x105F6AE4, 0xLLLLLLLL)"
+		},
+		"other": "Replace L's with the desired value\n\n3F800000 -> Music On\n3FE00000 -> Music Off",
+		"display": true
+	},
+	{
+		"id": 36,
+		"title": "No Object Collision",
+		"description": "Player will not collide with objects on the track",
+		"author": "Megabyte918",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 1050F024\n00000000 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x1050F024, 0x00000000)"
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 37,
+		"title": "No lightning damage",
+		"description": "",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 1051E740\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x1051E740, 0xLLLLLLLL)"
+		},
+		"other": "Replace L's with the desired value\n\n00000000 -> The damage caused by lightning doesn't reduce of size to the player, this effect deletes the lightning when it is thrown (only takes effect if you are in first place).\n\nFFFFFFFF -> The damage caused by lightning maintains reduced of size of the player, the only way to return to normal size is using a bullet bill.",
+		"display": true
+	},
+	{
+		"id": 38,
+		"title": "Red & Blue Shell Effect Modifier",
+		"description": "",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 1051CC70\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x1051CC70, 0xLLLLLLLL)"
+		},
+		"other": "Replace L's with the desired value\n\n3F000000 -> Red and blue shells will stay static when being thrown, blue shells will stay static for\nsome seconds and then will move slowly.\n40E00000 -> Increases the speed of red and blue shells when being thrown.\n41000000 -> You will have the possibility to control the blue shell, you will be able of hit players if they are near you.\nF0F00000 -> Throw Red Shell or Blue Shell to Freeze Wii U (and anyone nearby's Wii U?)",
+		"display": true
+	},
+	{
+		"id": 39,
+		"title": "Remove Lakitu",
+		"description": "",
+		"author": "Mega-Mew",
+		"cafe_code": {
+			"enabled": true,
+			"code": "30000000 3FBA92BC\n35000000 49000000\n31000000 00000028\n30100000 00000000\n30000000 50000000\n31000000 FFFFF494\n00120000 00000000\n00120194 00000000\nD0000000 DEADCAFE"
+		},
+		"ugecko": {
+			"enabled": false,
+			"code": ""
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 40,
+		"title": "Remove Stage Start Camera",
+		"description": "",
+		"author": "Divengerss",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 10510AC4\n358637BD 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x10510AC4, 0x358637BD)"
+		},
+		"other": "",
+		"display": true
+	},
+	{
+		"id": 41,
+		"title": "Shell Size Modifier",
+		"description": "",
+		"author": "Lüî§35000vr",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 1051C4A4\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x1051C4A4, 0xLLLLLLLL)"
+		},
+		"other": "Replace L's with your desired value.\n\n3F000000 -> Half Size\n3F800000 -> Normal Size\n40000000 -> Double Size\n41000000 -> 8x Size",
+		"display": true
+	},
+	{
+		"id": 42,
+		"title": "Speed hack",
+		"description": "",
+		"author": "",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 10522D28\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x10522D28, 0xLLLLLLLL)"
+		},
+		"other": "It applies to all players!\n\nReplace L's with your desired value.\nNormal -> 3F800000\nSpeedHack -> 3F810000\nSpeed of light -> 3F890000",
+		"display": false
+	},
+	{
+		"id": 43,
+		"title": "Statistics Modifier",
+		"description": "Allows you to edit your game statistics",
+		"author": "Megabyte918",
+		"cafe_code": {
+			"enabled": true,
+			"code": "Total Coins:\n00020000 2F748128\nLLLLLLLL 00000000\n\nTotal Wins:\n00020000 2F748658\nLLLLLLLL 00000000\n\nTotal Losses:\n00020000 2F74865C\nLLLLLLLL 00000000\n\nRace Rating:\n00020000 2F748660\nLLLLLLLL 00000000\n\nBattle Rating:\n00020000 2F748664\nLLLLLLLL 00000000\n\nTotal Drifts:\n00020000 2F748134\nLLLLLLLL 00000000\n\nTotal Mini-Turbos:\n00020000 2F74813C\nLLLLLLLL 00000000\n\nTotal Super Mini-Turbos:\n00020000 2F748140\nLLLLLLLL 00000000\n\nTotal Jump Boosts:\n00020000 2F748130\nLLLLLLLL 00000000\n\nBalloons Popped:\n00020000 2F748144\nLLLLLLLL 00000000\n\nOwn Balloons Popped:\n00020000 2F748148\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "Total Coins:\ngecko.poke32(0x2F748128, 0xLLLLLLLL)\n\nTotal Wins:\ngecko.poke32(0x2F748658, 0xLLLLLLLL)\n\nTotal Losses:\ngecko.poke32(0x2F74865C, 0xLLLLLLLL)\n\nRace Rating:\ngecko.poke32(0x2F748660, 0xLLLLLLLL)\n\nBattle Rating:\ngecko.poke32(0x2F748664, 0xLLLLLLLL)\n\nTotal Drifts:\ngecko.poke32(0x2F748134, 0xLLLLLLLL)\n\nTotal Mini-Turbos:\ngecko.poke32(0x2F74813C, 0xLLLLLLLL)\n\nTotal Super Mini-Turbos:\ngecko.poke32(0x2F748140, 0xLLLLLLLL)\n\nTotal Jump Boosts:\ngecko.poke32(0x2F748130, 0xLLLLLLLL)\n\nBalloons Popped:\ngecko.poke32(0x2F748144, 0xLLLLLLLL)\n\nOwn Balloons Popped:\ngecko.poke32(0x2F748148, 0xLLLLLLLL)"
+		},
+		"other": "Replace L's with your desired value in decimal.",
+		"display": true
+	},
+	{
+		"id": 44,
+		"title": "Unlock Everything",
+		"description": "",
+		"author": "DarkFlare, BullyWiiPlaza, Mega-Mew, & Others",
+		"cafe_code": {
+			"enabled": true,
+			"code": "30000000 11000000\n00000000 00000000\n31000000 2F7LLLLL\n0012710C 03030303\n00127110 03030303\n00127114 03030303\n0012712C 03030303\n00127130 03030303\n00127134 03030303\n0012714C 03030303\n00127150 03030303\n00127154 03030303\n0012716C 03030303\n00127170 03030303\n00127174 03030303\n0012718C 03030303\n00127190 03030303\n00127194 03030303\n0012720C 03030303\n00127210 03030303\n00127214 03030303\n0012722C 03030303\n00127230 03030303\n00127234 03030303\n0012724C 03030303\n00127250 03030303\n00127254 03030303\n0012726C 03030303\n00127270 03030303\n00127274 03030303\n0012728C 03030303\n00127290 03030303\n00127294 03030303\n00128668 03030303\n0012866C 03030303\n00128690 03030303\n00128694 03030303\n00128698 03030303\n0012869C 03030303\n001286A0 03030303\n001286A4 03030303\n001286A8 03030303\n001286AC 03030000\n001286D0 03030303\n001286D4 03030303\n001286D8 03030303\n001286DC 03030303\n001286E0 03030303\n001286E4 03030303\n001286E8 03030000\n00128710 03030303\n00128714 03030303\n00128718 03030303\n0012871C 03030303\n00128720 03030000\n00128750 03030303\n00128754 03030303\n00128758 03030303\n00128798 00000303\n0012879C 03030303\n001287A0 03030303\n001287A4 03030303\n001287A8 03030303\n001287AC 03030303\n001287B0 03030303\n001287B4 03030303\n001287B8 03030303\n001287BC 03030303\n001287C0 03030303\n001287C4 03030303\n001287C8 03030303\n001287CC 03030303\n001287D0 03030303\n001287D4 03030303\n001287D8 03030303\n001287DC 03030303\n001287E0 03030303\n001287E4 03030303\n001287E8 03030303\n001287EC 03030303\n001287F0 03030303\n0012D228 0071FEFF\nD0000000 DEADCAFE"
+		},
+		"ugecko": {
+			"enabled": false,
+			"code": ""
+		},
+		"other": "Replace L's with user slot.\n40000 -> User 1\n46800 -> User 2\n4D000 -> User 3\n53800 -> User 4\n5A000 -> User 5\n60800 -> User 6",
+		"display": true
+	},
+	{
+		"id": 45,
+		"title": "Weird Animations",
+		"description": "",
+		"author": "Megabyte918",
+		"cafe_code": {
+			"enabled": true,
+			"code": "00020000 105F3310\nLLLLLLLL 00000000"
+		},
+		"ugecko": {
+			"enabled": true,
+			"code": "gecko.poke32(0x105F3310, 0xLLLLLLLL)"
+		},
+		"other": "Replaces LLLLLLLL with the desired value\n3F800000 -> Normal Animations\n41000000 -> 8x Animations\n42000000 -> 32x Animations\n43000000 -> 128x Animations\n44000000 -> 512x Animations\n45000000 -> 2048x Animations",
+		"display": true
 	}
 ]
